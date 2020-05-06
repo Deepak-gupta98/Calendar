@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark your Date"
+        android:layout_marginLeft="75dp"
+       android:layout_marginTop="20dp"
+        android:textColor="#fff"
+       android:textSize="35sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:background="@drawable/bg_cal"
+        android:layout_marginLeft="5dp"
+        android:layout_width="350dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:weekDayTextAppearance="@color/colorAccent"
+            android:layout_width="370dp"
+            android:layout_height="400dp">
+
+        </CalendarView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Save Date"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/bg_btn"
+        />
+
+</LinearLayout>
